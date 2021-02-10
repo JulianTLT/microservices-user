@@ -22,7 +22,7 @@ ENV AWS_PROFILE=$AWS_PROFILE
 ENV JWT_SECRET=$JWT_SECRET
 ENV URL=$URL
 
-WORKDIR /usr/feed
+WORKDIR /usr/app
 COPY package*.json ./
 RUN npm install
 EXPOSE 8080
